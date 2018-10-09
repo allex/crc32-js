@@ -1,0 +1,10 @@
+[ignore]
+.*/node_modules/.*
+.*/test/.*
+.*/lib/.*
+[include]
+.*/src/.*
+[libs]
+flow
+[options]
+esproposal.decorators=ignore
