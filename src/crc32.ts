@@ -42,6 +42,12 @@ const hex = (what: number): string => {
   return ('0000000' + what.toString(16)).slice(-8);
 }
 
-const crc32 = (data: string | ArrayBuffer): string => hex(crc32b(data))
+const crc32 = (data: string | ArrayBuffer, encoding?: 'hex'): string | number => {
+  const crc = crc32b(data)
+  if (encoding) {
+    return hex(crc)
+  }
+  return crc
+}
 
 export { crc32, hex }

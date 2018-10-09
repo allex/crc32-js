@@ -1,6 +1,6 @@
 {
   "name": "@allex/crc32",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Provide pure JS CRC32 for nodejs & browser. Supports string, Buffer, ArrayBuffer, Uint8Array",
   "main": "lib/crc32.js",
   "module": "lib/crc32.esm.js",

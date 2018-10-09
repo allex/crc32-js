@@ -16,8 +16,8 @@ const arrayBuffer = fs.readFileSync(testBinaryFile);
 
 describe('use pure js crc32.js to test', () => {
   test('crc32() with string, arraybuffer', () => {
-    expect(crc32('allex')).toBe('1419b5f3');
-    expect(crc32(arrayBuffer)).toBe('79c38e61');
+    expect(crc32('allex')).toBe(337229299);
+    expect(crc32(arrayBuffer, 'hex')).toBe('79c38e61');
   });
 });
 ```
